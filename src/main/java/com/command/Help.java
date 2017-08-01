@@ -22,7 +22,7 @@ public class Help extends AbstractCommand {
                 "\n s - move cell down" +
                 "\n a - move cell left" +
                 "\n d - move cell right");
-        return builder.createArray();
+        return builder.buildBoard();
     }
 
     @Override

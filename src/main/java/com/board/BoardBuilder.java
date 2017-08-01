@@ -16,20 +16,17 @@ public class BoardBuilder {
                 }
             }
         }
-        buildBoard(matrix);
         return matrix;
     }
 
-    public void buildBoard(int[][] matrix) {
+    public int[][] buildBoard() {
+        int[][] matrix = createArray();
         BoardEditor editor = new BoardEditor();
-        BoardPresenter presenter = new BoardPresenter();
         editor.randomShuffle(matrix);
         if(editor.isSolvable(matrix)){
-            presenter.display(matrix);
+            return matrix;
         }
-        else {
-            buildBoard(matrix);
-        }
+        return buildBoard();
     }
 
 }

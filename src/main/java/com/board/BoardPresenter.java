@@ -8,8 +8,6 @@ import com.GameManager;
  */
 public class BoardPresenter {
 
-    private GameManager gameManager = new GameManager();
-
     public void display(int[][] matrix){
 
         for (int[] aMatrix : matrix) {
@@ -18,7 +16,6 @@ public class BoardPresenter {
             }
             System.out.println("\n" + "--------------");
         }
-        gameManager.findEmptyCell(matrix);
     }
 
     private void displayPretty(int element) {

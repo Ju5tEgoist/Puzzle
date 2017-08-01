@@ -17,7 +17,7 @@ public class StartGame extends AbstractCommand {
 
     @Override
     public int[][] process(int[][] board, int i, int j) {
-        return builder.createArray();
+        return builder.buildBoard();
     }
 
     @Override

@@ -32,6 +32,8 @@ public class CommandManager {
             }
         }
         presenter.display(board);
+        int[] emptyCoordinates = gameManager.findEmptyCell(board);
+        redirect(board, emptyCoordinates[0], emptyCoordinates[1]);
     }
 
     Action getAction() {

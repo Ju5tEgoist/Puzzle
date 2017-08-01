@@ -20,8 +20,6 @@ public class GameManager {
                 }
             }
         }
-        CommandManager commandManager = new CommandManager();
-        commandManager.redirect(matrix, emptyCellCoordinates[0], emptyCellCoordinates[1]);
         return emptyCellCoordinates;
     }
 
